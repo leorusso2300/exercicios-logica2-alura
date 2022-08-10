@@ -1,0 +1,45 @@
+<canvas width="600" height="400"></canvas>
+<img src="bandeira.png" width="600" height="400" style="position: relative; top: 400px; right: 604px">
+
+<script>
+
+  var tela = document.querySelector('canvas');
+  var pincel = tela.getContext('2d');
+
+
+  pincel.fillStyle ='yellow';
+  pincel.fillRect(0, 0, 600, 400);
+
+
+
+
+  pincel.fillStyle ='green';
+  pincel.beginPath();
+  pincel.moveTo(300, 170);
+  pincel.lineTo(30, 0);
+  pincel.lineTo(570, 0);
+  pincel.fill();
+
+  pincel.fillStyle ='green';
+  pincel.beginPath();
+  pincel.moveTo(300, 230);
+  pincel.lineTo(30, 400);
+  pincel.lineTo(570, 400);
+  pincel.fill();
+
+  pincel.fillStyle ='black';
+  pincel.beginPath();
+  pincel.moveTo(270, 200);
+  pincel.lineTo(0, 30);
+  pincel.lineTo(0, 370);
+  pincel.fill();
+
+  pincel.fillStyle ='black';
+  pincel.beginPath();
+  pincel.moveTo(330, 200);
+  pincel.lineTo(600, 32);
+  pincel.lineTo(600, 375);
+  pincel.fill();
+
+
+</script>
