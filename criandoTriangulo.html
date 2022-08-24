@@ -1,0 +1,26 @@
+<canvas id="canvas" width="600" height="400"></canvas>
+<script>
+  var tela = document.querySelector('canvas');
+  var pincel = tela.getContext('2d');
+
+  function desenhaEsquadro(xa, ya, xc, yc) {
+
+    pincel.fillStyle = 'red';
+    pincel.beginPath();
+    pincel.moveTo(xa, ya);
+    pincel.lineTo(xa, yc);
+    pincel.lineTo(xc, yc);
+    pincel.fill();
+
+    pincel.fillStyle = 'blue';
+    pincel.beginPath();
+    pincel.moveTo(xa + 50, ya + 130);
+    pincel.lineTo(xa + 50, yc - 30);
+    pincel.lineTo(xc - 100, yc - 30);
+    pincel.fill();
+  }
+  desenhaEsquadro(50, 50, 400, 400);
+
+
+
+</script>

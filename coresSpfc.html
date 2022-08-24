@@ -1,11 +1,24 @@
-<<canvas id="canvas" width="600" height="400"></canvas>
+<canvas id="canvas" width="600" height="400"></canvas>
 
 <script>
 
-
+  var tela = document.querySelector('canvas');
+  var pincel = tela.getContext('2d');
+  
   function desenhaRetangulo(x, y, largura, altura, cor){
-    var tela = document.querySelector('canvas');
-    var pincel = tela.getContext('2d');
+    pincel.fillStyle = cor;
+    pincel.fillRect(x, y, largura, altura);
+    pincel.strokeStyle = 'black';
+    pincel.strokeRect(x, y, largura, altura);
   }
+
+  function desenhaTexto(x, y, texto){
+
+  }
+
+  desenhaRetangulo(50, 50, 50, 50, 'red');
+
+
+
 
 </script>
